@@ -27,26 +27,6 @@ $productos = $stmt->fetchAll();
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="es">
 <head>

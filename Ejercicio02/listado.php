@@ -21,3 +21,8 @@ $totalProductos= $pdo->query('SELECT COUNT(*) FROM productos')->fetchColumn();
 
 
 echo "total de productos:$totalProductos"; 
+/* 
+
+
+
+*/
