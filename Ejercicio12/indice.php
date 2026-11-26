@@ -4,8 +4,12 @@ $sql1='select id, nombre from productos';
     
 $stmt1= $pdo->query($sql1);
 $filas = $stmt1->fetchAll();
-
-
+echo "<ul>";
+foreach($filas as $fila){
+    echo "<li> <a href='ficha.php?identificador={$fila['id']}'>{$fila['id']} - {$fila['nombre']} </a></li>";
+    
+}
+echo "</ul>";
 ?>
 
 <!DOCTYPE html>
@@ -16,8 +20,6 @@ $filas = $stmt1->fetchAll();
     <title>Document</title>
 </head>
 <body>
-    <?php foreach($filas as $fila):?>
-        <?php echo $fila['id']?>
-    <?php endforeach;?>
+  
 </body>
 </html>
